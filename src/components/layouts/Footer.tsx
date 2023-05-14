@@ -3,7 +3,7 @@ import {makeStyles, Theme} from '@material-ui/core/styles'
 import {Container, Grid, Typography} from '@material-ui/core'
 
 import {routes} from '../../data/routes'
-import UtilLink from '../utils/Link'
+import Link from '../utils/Link'
 import SocialMedia from '../utils/SocialMedia'
 
 const useStyles = makeStyles((theme:Theme) => ({
@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme:Theme) => ({
             <Grid container spacing={3} justifyContent="center">
           {path.map(({ name, link }) => (
             <Grid item key={link}>
-              <UtilLink href={link}>
+              <Link href={link}>
                 <Typography
                   className={classes.link}
                   style={{
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme:Theme) => ({
                 >
                   {name}
                 </Typography>
-              </UtilLink>
+              </Link>
             </Grid>
           ))}
         </Grid>

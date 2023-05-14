@@ -28,7 +28,7 @@ export const NextLinkComposed = React.forwardRef<HTMLAnchorElement, NextLinkComp
     } = props
 
     return (
-      <NextLink
+      (<NextLink
         href={to}
         prefetch={prefetch}
         as={linkAs}
@@ -37,10 +37,11 @@ export const NextLinkComposed = React.forwardRef<HTMLAnchorElement, NextLinkComp
         shallow={shallow}
         passHref={passHref}
         locale={locale}
-      >
-        <a ref={ref} {...other}/>
-      </NextLink>     
-    )
+        ref={ref}
+        {...other}>
+
+      </NextLink>)
+    );
   },
 )
 
@@ -52,7 +53,7 @@ export type LinkProps = {
 } & Omit<NextLinkComposedProps, "to" | "linkAs" | "href"> &
   Omit<MuiLinkProps, "href">
 
-const UtilLink = React.forwardRef<HTMLAnchorElement, LinkProps>(function Link(props, ref) {
+const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(function Link(props, ref) {
   const {
     activeClassName = "active",
     as: linkAs,
@@ -97,4 +98,4 @@ const UtilLink = React.forwardRef<HTMLAnchorElement, LinkProps>(function Link(pr
   )
 })
 
-export default UtilLink
+export default Link

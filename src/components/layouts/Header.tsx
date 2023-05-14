@@ -19,7 +19,7 @@ import {
 import useScrollTrigger from "@material-ui/core/useScrollTrigger"
 import MenuIcon from "@material-ui/icons/Menu"
 
-import UtilLink from "../utils/Link"
+import Link from "../utils/Link"
 import { routes } from "../../data/routes"
 
 interface ElevationScrollProps {
@@ -84,7 +84,7 @@ const Header = () => {
       <Grid container justifyContent="flex-end" spacing={4}>
         {path.map(({ name, link }) => (
           <Grid item key={link}>
-            <UtilLink href={link}>
+            <Link href={link}>
               <Typography
                 style={{
                   color: "inherit",
@@ -94,7 +94,7 @@ const Header = () => {
               >
                 {name}
               </Typography>
-            </UtilLink>
+            </Link>
           </Grid>
         ))}
       </Grid>
@@ -124,7 +124,7 @@ const Header = () => {
               }}
             >
               <ListItemText disableTypography>
-                <UtilLink href={link}></UtilLink>
+                <Link href={link}></Link>
                   <Typography
                     style={{
                       color:
@@ -134,7 +134,7 @@ const Header = () => {
                       fontWeight: router.pathname === link ? "bold" : "normal"
                     }}
                   >
-                    name
+                    {name}
                   </Typography>
                 
               </ListItemText>
@@ -165,7 +165,7 @@ const Header = () => {
               padding: matches ? "0 16px" : "24px"
             }}
           >
-            <UtilLink href="/"></UtilLink>
+            <Link href="/"></Link>
               <Typography
                 style={{
                   color: "inherit",
@@ -175,7 +175,7 @@ const Header = () => {
                   zIndex: 100
                 }}
               >
-                Sample
+                KronoWorks
               </Typography>
             
             {matches ? drawer : tabs}
