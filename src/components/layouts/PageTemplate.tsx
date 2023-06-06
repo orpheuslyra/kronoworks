@@ -22,7 +22,6 @@ const PageTemplate = ({ children, title }: PageTemplateProps) => {
       <main>
         {children}
       </main>
-      <ScrollUp />
       <footer>
       <Footer/>
       </footer>

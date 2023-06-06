@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme:Theme) => ({
         justifyContent='center'
         >
         <Typography className={classes.copylight}>
-            &copy;{new Date().getFullYear()}Sample
+            &copy;{new Date().getFullYear()} KronoWorks
         </Typography>
         </Grid> 
         </Container>

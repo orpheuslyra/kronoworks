@@ -165,7 +165,7 @@ const Header = () => {
               padding: matches ? "0 16px" : "24px"
             }}
           >
-            <Link href="/"></Link>
+            <Link href="/">
               <Typography
                 style={{
                   color: "inherit",
@@ -177,7 +177,7 @@ const Header = () => {
               >
                 KronoWorks
               </Typography>
-            
+              </Link>
             {matches ? drawer : tabs}
           </Toolbar>
         </AppBar>

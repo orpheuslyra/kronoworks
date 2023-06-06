@@ -31,7 +31,7 @@ const SocialMedia = ({color}:SocialMediaProps)=>{
             component={'a'}
             target='_blank'
             rel='noreferrer noopener'
-            href='/contact'
+            href='#'
             >
             <MailIcon
             className={classes.snsIcon}
@@ -43,7 +43,7 @@ const SocialMedia = ({color}:SocialMediaProps)=>{
             component={'a'}
             target='_blank'
             rel='noreferrer noopener'
-            href='/contact'
+            href='#'
             >
             <TwitterIcon
             className={classes.snsIcon}
@@ -55,7 +55,7 @@ const SocialMedia = ({color}:SocialMediaProps)=>{
             component={'a'}
             target='_blank'
             rel='noreferrer noopener'
-            href='/contact'
+            href='#'
             >
             <InstagramIcon
             className={classes.snsIcon}
@@ -67,7 +67,7 @@ const SocialMedia = ({color}:SocialMediaProps)=>{
             component={'a'}
             target='_blank'
             rel='noreferrer noopener'
-            href='/contact'
+            href='#'
             >
             <FacebookIcon
             className={classes.snsIcon}
